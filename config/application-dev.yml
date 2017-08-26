@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  context-path: /spring-async
+com:
+  jin:
+    async:
+      corePoolSize: 10
+      maxPoolSize: 50
+      queueCapacity: 1000
+      threadNamePrefix: Jin-Exec-
+spring:
+  application:
+    name: spring-async
+logging:
+  file: ./target/spring-jpa.log
